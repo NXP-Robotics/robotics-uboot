@@ -226,8 +226,8 @@ config TARGET_IMX95_NAVQA
 	select IMX_SM_LMM
 	select IMX_SM_CPU
 
-config TARGET_IMX95_NAVQB
-	bool "imx95_navqb"
+config TARGET_IMX95_NAVQ
+	bool "imx95_navq"
 	select IMX95
 	imply BOOTSTD_BOOTCOMMAND
 	imply BOOTSTD_FULL

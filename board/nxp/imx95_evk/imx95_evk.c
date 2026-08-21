@@ -72,7 +72,7 @@ struct tcpc_port_config port_config = {
 	.port_type = TYPEC_PORT_DRP,
 	.disable_pd = true,
 };
-#elif defined(CONFIG_TARGET_IMX95_NAVQB)
+#elif defined(CONFIG_TARGET_IMX95_NAVQ)
 struct tcpc_port_config port_config = {
 	.i2c_bus = 2, /* i2c3 */
 	.addr = 0x50,
@@ -263,7 +263,7 @@ void netc_init(void)
 #ifdef CONFIG_TARGET_IMX95_15X15_EVK
 	netc_phy_rst("gpio@22_4", "ENET1_RST_B");
 	netc_phy_rst("gpio@22_5", "ENET2_RST_B");
-#elif defined(CONFIG_TARGET_IMX95_NAVQB)
+#elif defined(CONFIG_TARGET_IMX95_NAVQ)
 	netc_phy_rst("i2c3_io@21_1", "ENET1_RST_B");
 #else
 	netc_phy_rst("i2c5_io@21_2", "ENET1_RST_B");

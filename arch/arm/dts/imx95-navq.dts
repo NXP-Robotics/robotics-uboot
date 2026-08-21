@@ -19,8 +19,8 @@
 #define BRD_SM_CTRL_BUTTON		0x8004	/* PCAL6408A-7 */
 
 / {
-	model = "NXP MR-NAVQ95B";
-	compatible = "fsl,imx95-navqb", "fsl,imx95";
+	model = "NXP MR-NAVQ95";
+	compatible = "fsl,imx95-navq", "fsl,imx95";
 
 	aliases {
 		gpio0 = &gpio1;
