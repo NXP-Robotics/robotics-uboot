@@ -214,18 +214,6 @@ config TARGET_IMX952_EVK
 	select IMX_SM_LMM
 	select IMX_SM_CPU
 
-config TARGET_IMX95_NAVQA
-	bool "imx95_navqa"
-	select IMX95
-	imply BOOTSTD_BOOTCOMMAND
-	imply BOOTSTD_FULL
-	select CMD_REMOTEPROC
-	select REMOTEPROC_IMX
-	select REGMAP
-	select SYSCON
-	select IMX_SM_LMM
-	select IMX_SM_CPU
-
 config TARGET_IMX95_NAVQ
 	bool "imx95_navq"
 	select IMX95

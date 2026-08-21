@@ -23,7 +23,7 @@
 #define PHYS_SDRAM_2_SIZE		0x380000000 /* 14GB (Totally 16GB) */
 #endif
 
-#if defined(CONFIG_TARGET_IMX95_NAVQA) || defined(CONFIG_TARGET_IMX95_NAVQ)
+#if defined(CONFIG_TARGET_IMX95_NAVQ)
 /* NavQ SPL runs from DDR at 0x88240000 (lpboot/SCMI path). Extend the
  * secure DDR window to cover the SPL text so the MMU map set up by
  * spl_enable_caches() in arch_cpu_init() does not leave the SPL address

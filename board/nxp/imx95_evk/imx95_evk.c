@@ -65,13 +65,6 @@ struct tcpc_port_config portpd_config = {
 	.max_snk_mw = 15000,
 	.op_snk_mv = 9000,
 };
-#elif defined(CONFIG_TARGET_IMX95_NAVQA)
-struct tcpc_port_config port_config = {
-	.i2c_bus = 1, /* i2c2 */
-	.addr = 0x51,
-	.port_type = TYPEC_PORT_DRP,
-	.disable_pd = true,
-};
 #elif defined(CONFIG_TARGET_IMX95_NAVQ)
 struct tcpc_port_config port_config = {
 	.i2c_bus = 2, /* i2c3 */
@@ -374,7 +367,7 @@ int board_init(void)
 	setup_typec();
 #endif
 
-#if IS_ENABLED(CONFIG_TARGET_IMX95_19X19_EVK) || IS_ENABLED(CONFIG_TARGET_IMX95_NAVQA)
+#if IS_ENABLED(CONFIG_TARGET_IMX95_19X19_EVK)
 	netc_regulator_enable("regulator-m2-pwr", true);
 #endif
 
