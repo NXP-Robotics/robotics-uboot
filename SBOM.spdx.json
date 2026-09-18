@@ -2,7 +2,7 @@
   "SPDXID": "SPDXRef-DOCUMENT",
   "spdxVersion": "SPDX-2.3",
   "creationInfo": {
-    "created": "2026-09-11T12:59:00Z",
+    "created": "2026-09-18T11:41:24Z",
     "creators": [
       "Organization: NXP"
     ],
@@ -18,7 +18,7 @@
       "versionInfo": "0.7.0",
       "licenseConcluded": "(GPL-2.0-only)",
       "licenseDeclared": "(GPL-2.0-only)",
-      "downloadLocation": "https://github.com/nxp-mobilerobotics/robotics-uboot",
+      "downloadLocation": "https://github.com/nxp-robotics/robotics-uboot",
       "originator": "Organization: robotics-uboot",
       "supplier": "NOASSERTION",
       "externalRefs": [],
